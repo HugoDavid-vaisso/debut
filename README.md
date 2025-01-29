@@ -3,11 +3,11 @@
 	<big>Publicodes Package Template</big>
   </h3>
   <p align="center">
-   <a href="https://github.com/publicodes/model-template/issues">Report Bug</a>
+   <a href="https://github.com/HugoDavid-vaisso/debut/issues">Report Bug</a>
    •
-   <a href="https://publicodes.github.io/model-template/">API docs</a>
+   <a href="https://HugoDavid-vaisso.github.io/debut/">API docs</a>
    •
-   <a href="https://github.com/publicodes/model-template/blob/master/CONTRIBUTING.md">Contribute</a>
+   <a href="https://github.com/HugoDavid-vaisso/debut/blob/master/CONTRIBUTING.md">Contribute</a>
    •
    <a href="https://publi.codes">Publicodes</a>
   </p>
@@ -31,7 +31,7 @@ Pour utiliser ce template, il suffit de cliquer sur le bouton `Use this
 template`. Puis de remplacer les variables suivantes dans tous les fichiers du
 projet :
 
-- `model-template` : nom du paquet npm / nom du repository GitHub
+- `debut` : nom du paquet npm / nom du repository GitHub
 - `publicodes` : nom d'utilisateur GitHub / organisation GitHub
 
 Pour utiliser les fonctionnalités de la CI :
@@ -59,14 +59,14 @@ Pour utiliser les fonctionnalités de la CI :
 Ajouter le paquet à vos dépendances :
 
 ```
-yarn add model-template
+yarn add debut
 ```
 
 Instancier un nouveau moteur Publicode :
 
 ```typescript
-import Engine from "publicodes"
-import rules from "model-template"
+import Engine from "HugoDavid-vaisso"
+import rules from "debut"
 
 const engine = new Engine(rules)
 
@@ -78,8 +78,8 @@ Utiliser certaines règles dans un autre modèle publicodes :
 ```yaml
 importer!:
   depuis:
-    nom: model-template
-    url: https://github.com/publicodes/model-template
+    nom: debut
+    url: https://github.com/HugoDavid-vaisso/debut
   les règles:
     - prix . carottes
     - prix . carottes
@@ -91,7 +91,7 @@ importer!:
 #### Compiler le modèle
 
 > Les règles publicodes du modèle sont disponible dans le workspace
-> [`rules/`](https://github.com/publicodes/model-template/tree/main/rules).
+> [`rules/`](https://github.com/publicodes/debut/tree/main/rules).
 
 Pour installer les dépendances et compiler tous les fichiers `.publicodes` en
 un seul fichier JSON, il suffit d'exécuter la commande suivante :
@@ -105,7 +105,7 @@ yarn build
 #### Lancer la documentation
 
 > Le code de la documentation est disponible dans le workspace
-> [`doc/`](https://github.com/publicodes/model-template/tree/main/doc).
+> [`doc/`](https://github.com/publicodes/debut/tree/main/doc).
 
 Pour lancer l'app React en local permettant de parcourir la documentation du
 modèle, il suffit d'exécuter la commande suivante :
@@ -119,7 +119,7 @@ yarn doc
 #### Lancer l'API
 
 > Le code de l'API est disponible dans le workspace
-> [`api/`](https://github.com/publicodes/model-template/tree/main/api).
+> [`api/`](https://github.com/publicodes/debut/tree/main/api).
 
 Pour lancer le serveur Node permettant d'utiliser l'API REST, il faut utiliser les commandes
 suivantes :
